@@ -1,0 +1,6 @@
+{
+  "postgresConnection": {
+    "database": "read_model",
+    "host": "localhost"
+  }
+}
