@@ -11,4 +11,6 @@ require 'test_bench/activate'
 
 require 'read_model/entity/sequel/controls'
 
+ReadModel::Entity::Sequel::Controls::SetupSchema.()
+
 Controls = ReadModel::Entity::Sequel::Controls

@@ -25,6 +25,10 @@ module ReadModel::Entity
         instance.connection
       end
 
+      def self.connect
+        instance.connect
+      end
+
       def self.settings
         Settings.build
       end
