@@ -6,7 +6,6 @@ module ReadModel::Entity::Sequel
 
         entity = Example.get ID.example
         entity.some_attribute = Attribute.example stream_version
-        entity.events_applied = stream_version + 1
 
         (0..stream_version).each do |stream_position|
           association_id = Association::ID.example stream_position
