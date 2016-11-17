@@ -7,7 +7,6 @@ module ReadModel::Entity::Sequel
         connection.create_table! TableName.example do
           String :id, :primary_key => true
           String :some_attribute, :null => false
-          Integer :events_applied
         end
 
         connection.create_table! TableName::Association.example do
