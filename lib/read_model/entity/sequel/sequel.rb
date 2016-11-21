@@ -1,6 +1,8 @@
 module ReadModel::Entity
   module Sequel
     def self.apply(model)
+      model.db = Connection.get
+
       model.instance_exec do
         self.require_modification = false
 
