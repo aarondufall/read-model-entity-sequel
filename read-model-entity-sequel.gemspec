@@ -17,8 +17,6 @@ Gem::Specification.new do |s|
   s.bindir = 'bin'
 
   s.add_runtime_dependency 'identifier-uuid'
-  s.add_runtime_dependency 'log'
   s.add_runtime_dependency 'postgresql-connector'
   s.add_runtime_dependency 'sequel'
-  s.add_runtime_dependency 'telemetry-logger'
 end

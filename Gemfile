@@ -3,14 +3,18 @@ source 'https://rubygems.org'
 gem 'sequel'
 
 source 'https://gem.fury.io/eventide' do
-  gem 'log'
   gem 'identifier-uuid'
-  gem 'telemetry-logger'
 
   gem 'attribute'
   gem 'clock'
-  gem 'dependency'
+  gem 'configure'
+  gem 'log'
+  gem 'initializer'
+  gem 'schema'
+  gem 'serialize'
+  gem 'settings'
   gem 'telemetry'
+  gem 'validate'
 end
 
 source 'https://repo.fury.io/obsidian' do
