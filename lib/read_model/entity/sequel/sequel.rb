@@ -25,7 +25,20 @@ module ReadModel::Entity
             root_instance.public_send add_method, associated_model
 
             true
+
+          elsif options[:method] == :each
+            root_instance = options[:instance]
+
+            root_instance.after_save_hook do
+              association_name = options[:reflection][:name]
+
+              associated_models = root_instance.public_send association_name
+              associated_models.to_a.each &:save
+            end
+
+            false
           else
+
             false
           end
         end
