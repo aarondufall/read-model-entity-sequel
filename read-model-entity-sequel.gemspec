@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name = 'read_model-entity-sequel'
-  s.version = '0.0.0.3'
+  s.version = '0.0.0.4'
   s.summary = 'Read Model Entity Sequel'
   s.description = ' '
 
