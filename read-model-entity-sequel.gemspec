@@ -16,7 +16,9 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 2.2.3'
   s.bindir = 'bin'
 
-  s.add_runtime_dependency 'identifier-uuid'
+  s.add_runtime_dependency 'evt-identifier-uuid'
+
   s.add_runtime_dependency 'postgresql-connector'
+
   s.add_runtime_dependency 'sequel'
 end
